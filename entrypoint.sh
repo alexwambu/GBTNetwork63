@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Start geth on localhost:8545
-geth --datadir ./data \
-  --networkid 2025 \
+# Start Geth (GBTNetwork)
+geth --datadir /data \
+  --networkid 999 \
   --http \
   --http.addr 127.0.0.1 \
   --http.port 8545 \
@@ -13,5 +13,6 @@ geth --datadir ./data \
   --http.corsdomain="*" \
   --verbosity 3 &
 
-# Start nginx (HTTPS proxy)
+# Start NGINX
 nginx -g 'daemon off;'
+
