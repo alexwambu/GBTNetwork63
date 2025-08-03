@@ -1,0 +1,10 @@
+{
+  "buildCommand": "chmod +x entrypoint.sh",
+  "startCommand": "./entrypoint.sh",
+  "envVars": [
+    {
+      "key": "PORT",
+      "value": "443"
+    }
+  ]
+}
